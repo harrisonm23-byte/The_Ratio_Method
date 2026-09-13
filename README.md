@@ -21,6 +21,8 @@ of litigating it.
 
 ## Implementation
 
+The code below lives in [`ratio_method.py`](ratio_method.py).
+
 ```python
 def ratio_method(incident_count, population, total_damages, gdp_per_capita,
                  sv1: int, sv2: str, th: str, lc1: int, lc2: int):
