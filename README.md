@@ -13,8 +13,8 @@ of litigating it.
 |---|---|---|---|
 | Frequency | `Frequency` | How often the harm occurs: incidents relative to the exposed population (`incident_count / population`). | ratio (float) |
 | Average Damages | `Average_Damages` | The typical size of harm per incident, compared against economic output (`total_damages / gdp_per_capita`). Corresponds to what Gifford refers to as "severity." | ratio (float) |
-| Social Value 1 | `SV1` | The economic value that the activity adds — its productive benefit to society. | `int` |
-| Social Value 2 | `SV2` | The cultural inclination toward the activity — its value beyond pure economics. | `str` |
+| Social Value 1  | `SV1` | The economic value that the activity adds — its productive benefit to society. | `int` |
+| Social Value 2  | `SV2` | The cultural inclination toward the activity — its value beyond pure economics. | `str` |
 | Type of Harm | `Type_Harm` | A classification across the six dimensions in [Type of Harm](#type-of-harm-th) below. Every axis is categorical — none is quantitative. | `str` |
 | Litigation Costs 1 | `LC1` | The cost structure of bringing a claim — information costs versus claim costs (Landes & Posner). | `int` |
 | Litigation Costs 2 | `LC2` | The difficulty of proving liability (Gifford factor 3). | `int` (see [Notes](#notes--open-questions)) |
