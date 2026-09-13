@@ -7,6 +7,8 @@ is relative to economic output — which is where the method gets its name. The 
 capture the social value of the activity, the mechanism of the harm, and the cost
 of litigating it.
 
+> **Source.** This repository is derived from the author's article, Harrison C. Margolin & Grant H. Frazier, *The Ratio Method: Addressing Complex Tort Liability in the Fourth Industrial Revolution*, 52 St. Mary's L.J. 679 (2021). [Article page](https://commons.stmarytx.edu/thestmaryslawjournal/vol52/iss3/4/) · [Full text (PDF)](https://commons.stmarytx.edu/cgi/viewcontent.cgi?article=1115&context=thestmaryslawjournal).
+
 ## The seven factors
 
 | Factor | Key | What it measures | Type |
@@ -140,5 +142,6 @@ is one value drawn from each axis. Every axis is categorical — none is quantit
 
 ## References
 
+- Harrison C. Margolin & Grant H. Frazier, *The Ratio Method: Addressing Complex Tort Liability in the Fourth Industrial Revolution*, 52 St. Mary's L.J. 679 (2021). [Article page](https://commons.stmarytx.edu/thestmaryslawjournal/vol52/iss3/4/) · [Full text (PDF)](https://commons.stmarytx.edu/cgi/viewcontent.cgi?article=1115&context=thestmaryslawjournal). The article this framework and its "mechanisms of action" classification are drawn from.
 - Gifford — "severity" (Average Damages) and factor 3, difficulty of proving liability (LC2).
 - Landes & Posner — information costs versus claim costs (LC1).

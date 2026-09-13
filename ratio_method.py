@@ -3,6 +3,11 @@
 A framework for characterizing a category of harm across seven factors:
 Frequency, Average Damages, Social Value 1 and 2, Type of Harm, and
 Litigation Costs 1 and 2. See README.md for a full description.
+
+Derived from Harrison C. Margolin & Grant H. Frazier, The Ratio Method:
+Addressing Complex Tort Liability in the Fourth Industrial Revolution,
+52 St. Mary's L.J. 679 (2021).
+https://commons.stmarytx.edu/thestmaryslawjournal/vol52/iss3/4/
 """
 
 
