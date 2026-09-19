@@ -60,7 +60,7 @@ of litigating it.
     <tr>
       <td>Litigation Costs 2</td>
       <td><code>LC2</code></td>
-      <td>The difficulty of proving liability.</td>
+      <td>The difficulty of proving liability – specifically, breach or causattion.</td>
       <td><code>int</code></td>
     </tr>
   </tbody>
