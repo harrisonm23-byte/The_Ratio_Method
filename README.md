@@ -13,8 +13,8 @@ of litigating it.
 
 | Factor | Key | What it measures | Type |
 |---|---|---|---|
-| Frequency | `Frequency` | How often the harm occurs: incidents divided by the exposed population. | ratio |
-| Average Damages | `Average_Damages` | How large the typical harm is: damages divided by GDP per capita. | ratio |
+| Frequency | `Frequency` | How often the harm occurs: `incident_count / population`. | ratio |
+| Average Damages | `Average_Damages` | How large the typical harm is: `total_damages / gdp_per_capita`. | ratio |
 | Social Value 1 | `SV1` | The economic value the activity adds to society. | `int` |
 | Social Value 2 | `SV2` | The cultural value of the activity, beyond economics. | `str` |
 | Type of Harm | `Type_Harm` | The mechanism of the harm, classified along the six axes in [Type of Harm](#type-of-harm-th). | `str` |
