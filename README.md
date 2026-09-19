@@ -13,13 +13,13 @@ of litigating it.
 
 | Factor | Key | What it measures | Type |
 |---|---|---|---|
-| Frequency | `Frequency` | How often the harm occurs: incidents relative to the exposed population (`incident_count / population`). | ratio (float) |
-| Average Damages | `Average_Damages` | The typical size of harm per incident, compared against economic output (`total_damages / gdp_per_capita`). Corresponds to what Gifford refers to as "severity." | ratio (float) |
-| Social Value 1  | `SV1` | The economic value that the activity adds — its productive benefit to society. | `int` |
-| Social Value 2  | `SV2` | The cultural inclination toward the activity — its value beyond pure economics. | `str` |
-| Type of Harm | `Type_Harm` | A classification across the six dimensions in [Type of Harm](#type-of-harm-th) below. Every axis is categorical — none is quantitative. | `str` |
-| Litigation Costs 1 | `LC1` | The cost structure of bringing a claim — information costs versus claim costs (Landes & Posner). | `int` |
-| Litigation Costs 2 | `LC2` | The difficulty of proving liability (Gifford factor 3). | `int` (see [Notes](#notes--open-questions)) |
+| Frequency | `Frequency` | How often the harm occurs: incidents divided by the exposed population. | ratio |
+| Average Damages | `Average_Damages` | How large the typical harm is: damages divided by GDP per capita. | ratio |
+| Social Value 1 | `SV1` | The economic value the activity adds to society. | `int` |
+| Social Value 2 | `SV2` | The cultural value of the activity, beyond economics. | `str` |
+| Type of Harm | `Type_Harm` | The mechanism of the harm, classified along the six axes in [Type of Harm](#type-of-harm-th). | `str` |
+| Litigation Costs 1 | `LC1` | The cost of bringing a claim: information costs versus claim costs. | `int` |
+| Litigation Costs 2 | `LC2` | The difficulty of proving liability. | `int` |
 
 ## Implementation
 
@@ -80,15 +80,15 @@ TYPE_OF_HARM = {
 
 | Parameter | Description |
 |---|---|
-| `incident_count` | Number of incidents of the harm over the period studied. |
-| `population` | Size of the population exposed to the harm over the same period. |
-| `total_damages` | Total (or typical per-incident) damages, in the same currency as `gdp_per_capita`. |
-| `gdp_per_capita` | GDP per capita, used to normalize damages against economic output. |
-| `sv1` | Social Value 1 — economic/productive benefit of the activity. |
-| `sv2` | Social Value 2 — cultural inclination toward the activity. |
-| `th` | Type of Harm — one value from each of the six `TYPE_OF_HARM` axes. |
-| `lc1` | Litigation Costs 1 — information costs versus claim costs. |
-| `lc2` | Litigation Costs 2 — difficulty of proving liability. |
+| `incident_count` | Number of incidents. |
+| `population` | Size of the exposed population. |
+| `total_damages` | Damages, in the same currency as GDP per capita. |
+| `gdp_per_capita` | GDP per capita. |
+| `sv1` | Social Value 1. |
+| `sv2` | Social Value 2. |
+| `th` | Type of Harm: one value from each of the six axes. |
+| `lc1` | Litigation Costs 1. |
+| `lc2` | Litigation Costs 2. |
 
 ### Example
 
