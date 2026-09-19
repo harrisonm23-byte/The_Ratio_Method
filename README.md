@@ -11,15 +11,60 @@ of litigating it.
 
 ## The seven factors
 
-| Factor | Key | What it measures | Type |
-|---|---|---|---|
-| Frequency | `Frequency` | How often the harm occurs: `incident_count / population`. | ratio |
-| Average Damages | `Average_Damages` | The typical size of harm per incident, compared against economic output (`total_damages / gdp_per_capita`). | ratio |
-| Social Value 1 | `SV1` | The economic value that the activity adds — its productive benefit to society. | `int` |
-| Social Value 2 | `SV2` | The cultural inclination toward the activity — its value beyond pure economics. | `str` |
-| Type of Harm | `Type_Harm` | The mechanism of the harm, classified along the six axes in [Type of Harm](#type-of-harm-th). | `str` |
-| Litigation Costs 1 | `LC1` | The cost structure of bringing a claim — information costs versus claim costs (Landes & Posner). | `int` |
-| Litigation Costs 2 | `LC2` | The difficulty of proving liability. | `int` |
+<table>
+  <thead>
+    <tr>
+      <th width="16%">Factor</th>
+      <th width="14%">Key</th>
+      <th width="60%">What it measures</th>
+      <th width="10%">Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Frequency</td>
+      <td><code>Frequency</code></td>
+      <td>How often the harm occurs: <code>incident_count / population</code>.</td>
+      <td>ratio</td>
+    </tr>
+    <tr>
+      <td>Average Damages</td>
+      <td><code>Average_Damages</code></td>
+      <td>The typical size of harm per incident, compared against economic output (<code>total_damages / gdp_per_capita</code>).</td>
+      <td>ratio</td>
+    </tr>
+    <tr>
+      <td>Social Value 1</td>
+      <td><code>SV1</code></td>
+      <td>The economic value that the activity adds — its productive benefit to society.</td>
+      <td><code>int</code></td>
+    </tr>
+    <tr>
+      <td>Social Value 2</td>
+      <td><code>SV2</code></td>
+      <td>The cultural inclination toward the activity — its value beyond pure economics.</td>
+      <td><code>str</code></td>
+    </tr>
+    <tr>
+      <td>Type of Harm</td>
+      <td><code>Type_Harm</code></td>
+      <td>The mechanism of the harm, classified along the six axes in <a href="#type-of-harm-th">Type of Harm</a>.</td>
+      <td><code>str</code></td>
+    </tr>
+    <tr>
+      <td>Litigation Costs 1</td>
+      <td><code>LC1</code></td>
+      <td>The cost structure of bringing a claim — information costs versus claim costs (Landes &amp; Posner).</td>
+      <td><code>int</code></td>
+    </tr>
+    <tr>
+      <td>Litigation Costs 2</td>
+      <td><code>LC2</code></td>
+      <td>The difficulty of proving liability.</td>
+      <td><code>int</code></td>
+    </tr>
+  </tbody>
+</table>
 
 ## Implementation
 
