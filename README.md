@@ -14,11 +14,11 @@ of litigating it.
 | Factor | Key | What it measures | Type |
 |---|---|---|---|
 | Frequency | `Frequency` | How often the harm occurs: `incident_count / population`. | ratio |
-| Average Damages | `Average_Damages` | How large the typical harm is: `total_damages / gdp_per_capita`. | ratio |
-| Social Value 1 | `SV1` | The economic value the activity adds to society. | `int` |
-| Social Value 2 | `SV2` | The cultural value of the activity, beyond economics. | `str` |
+| Average Damages | `Average_Damages` | The typical size of harm per incident, compared against economic output (`total_damages / gdp_per_capita`). | ratio |
+| Social Value 1 | `SV1` | The economic value that the activity adds — its productive benefit to society. | `int` |
+| Social Value 2 | `SV2` | The cultural inclination toward the activity — its value beyond pure economics. | `str` |
 | Type of Harm | `Type_Harm` | The mechanism of the harm, classified along the six axes in [Type of Harm](#type-of-harm-th). | `str` |
-| Litigation Costs 1 | `LC1` | The cost of bringing a claim: information costs versus claim costs. | `int` |
+| Litigation Costs 1 | `LC1` | The cost structure of bringing a claim — information costs versus claim costs (Landes & Posner). | `int` |
 | Litigation Costs 2 | `LC2` | The difficulty of proving liability. | `int` |
 
 ## Implementation
