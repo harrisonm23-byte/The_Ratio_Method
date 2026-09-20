@@ -1,10 +1,11 @@
 # The Ratio Method
 
 A framework for characterizing a category of harm (a tort, an activity, a product
-class) by breaking it into seven factors. Two of the factors are ratios — how often
-the harm occurs relative to the exposed population, and how large the typical harm
-is relative to economic output — which is where the method gets its name. The rest
-capture the social value of the activity, the mechanism of the harm, and the cost
+class) by breaking it into seven factors. Two of the factors are ratios: how often
+the harm occurs relative to the exposed population (Frequency), and how large the typical harm
+is relative to economic output (Average Damages), which is where the method gets its name. 
+
+The rest capture the social value of the activity, the mechanism of the harm, and the cost
 of litigating it.
 
 > **Source.** This repository is derived from the author's article, Harrison C. Margolin & Grant H. Frazier, *The Ratio Method: Addressing Complex Tort Liability in the Fourth Industrial Revolution*, 52 St. Mary's L.J. 679 (2021). [Article page](https://commons.stmarytx.edu/thestmaryslawjournal/vol52/iss3/4/) · [Full text (PDF)](https://commons.stmarytx.edu/cgi/viewcontent.cgi?article=1115&context=thestmaryslawjournal).
