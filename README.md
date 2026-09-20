@@ -13,9 +13,7 @@ Frequency =  Number of People Affected / Total Population
 Average Damages = Cost of Harm / GDP per Capita
 Social Value = Economic Benefit to Society / GDP  
 
-Note that Frequency x Average Damages = Total Cost of Harm / GDP
-
-In a sense, we begin with F*AD compared to SV (societal cost-benefit analysis), but pick apart the constituent components of this inequality in order to find a match. 
+Note that Frequency x Average Damages = Total Cost of Harm / GDP. F*AD compared to SV is an overarching societal cost-benefit analysis, and the method then picks apart the constituents of this inequality to find a match. 
 
 > **Source.** This repository is derived from the author's article, Harrison C. Margolin & Grant H. Frazier, *The Ratio Method: Addressing Complex Tort Liability in the Fourth Industrial Revolution*, 52 St. Mary's L.J. 679 (2021). [Article page](https://commons.stmarytx.edu/thestmaryslawjournal/vol52/iss3/4/) · [Full text (PDF)](https://commons.stmarytx.edu/cgi/viewcontent.cgi?article=1115&context=thestmaryslawjournal).
 
