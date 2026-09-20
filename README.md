@@ -2,11 +2,7 @@
 
 A liability framework that characterizes an activity, product, or industry by a set of law-and-economics variables. It was developed to give policymakers a systematic way to assign liability for the novel risks posed by AI and other emerging technologies of the "Fourth Industrial Revolution."
 
-The method works by precedent. Once an activity is profiled, it is matched to the
-historical liability regimes whose profiles it most resembles, such as workers'
-compensation, the Price-Anderson Act, or the Vaccine Injury Compensation Program.
-
-## The variables
+Once an activity is profiled, it is matched to the historical liability regimes whose profiles it most resembles, such as workers' compensation, the Price-Anderson Act, or the Vaccine Injury Compensation Program.
 
 It begins with two: how often the harm occurs relative to the exposed population
 (**Frequency**), and how large the typical harm is relative to economic output per
