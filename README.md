@@ -1,7 +1,8 @@
 # The Ratio Method
 
-A framework for characterizing a category of harm (a tort, an activity, a product
-class) by breaking it into seven factors. 
+A framework for characterizing the liability profile of an activity, product, or industry by profiling it with a set of variables, used for
+matching the target to a precedent regulatory regime. The Ratio Method was developed to provide policy solutions for new risks posed by AI 
+and other emerging technologies of the "Fourth Industrial Revolution". 
 
 Two of the factors are ratios: how often the harm occurs relative to the exposed population (Frequency), and how large the typical harm
 is relative to economic output (Average Damages). The other variables capture the social value of the activity (Social Value 1 and 2), 
