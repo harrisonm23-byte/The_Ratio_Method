@@ -1,23 +1,14 @@
 # The Ratio Method
 
-A civil liability framework, characterizing an activity, product, or industry by profiling it with a set of legal and economic variables. 
+A liability framework characterizing an activity, product, or industry by a set of law-and-economics variables, developed to provide policy solutions for novel risks posed by AI and other emerging technologies of the "Fourth Industrial Revolution." 
 
-The Ratio Method was developed to provide policy solutions for new risks posed by AI and other emerging technologies of the "Fourth Industrial Revolution". The method is
-used to match the target to a precedent regulatory regime with similar or matching variables. 
+The method is used to match the target industry / activity to precedent regulatory policies (e.g., Oil Pollution Act. Workers' Compensation) with similar or matching variables. 
 
-The Ratio Method begins with two variables: how often the harm occurs relative to the total population (Frequency), and how large the typical harm is relative to economic 
-output (Average Damages). The other variables capture the social value of the activity (Social Value 1 and 2), the mechanism of the harm (Type of Harm), and the cost of 
-litigating it (Litigation Costs 1 and 2).
-
-Frequency =  Number of People Affected / Total Population
-Average Damages = Cost of Harm / GDP per Capita
-Social Value = Economic Benefit to Society / GDP  
-
-Note that Frequency x Average Damages = Total Cost of Harm / GDP. F*AD compared to SV is an overarching societal cost-benefit analysis, and the method then picks apart the constituents of this inequality to find a match. 
+It begins with two variables: how often the harm occurs relative to the total population (Frequency), and how large the typical harm is relative to economic output (Average Damages). The rest captures the social value of the activity (Social Value 1 and 2), the mechanism of the harm (Type of Harm), and the cost of litigating it (Litigation Costs 1 and 2).
 
 > **Source.** This repository is derived from the author's article, Harrison C. Margolin & Grant H. Frazier, *The Ratio Method: Addressing Complex Tort Liability in the Fourth Industrial Revolution*, 52 St. Mary's L.J. 679 (2021). [Article page](https://commons.stmarytx.edu/thestmaryslawjournal/vol52/iss3/4/) · [Full text (PDF)](https://commons.stmarytx.edu/cgi/viewcontent.cgi?article=1115&context=thestmaryslawjournal).
 
-## The seven factors
+## The Ratio Method variables
 
 <table>
   <thead>
@@ -186,6 +177,7 @@ is one value drawn from each axis. Every axis is categorical — none is quantit
 
 ## Notes / open questions
 
+- **Societal Cost-Benefit Analysis.** Note that Frequency x Average Damages = Total Cost of Harm / GDP. Compared to Social Value, the initial question is therefore an aggregate societal cost-benefit analysis. The method then inspects the constituents of this inequality to find a match. 
 - **LC2 scale.** LC2 is currently cast to `int`, but it could equally be a string
   (e.g., `"low"`, `"moderate"`, `"high"`) or an integer (e.g., 1–10), depending on
   how it ends up being defined.
