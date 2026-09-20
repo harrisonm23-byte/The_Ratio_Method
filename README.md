@@ -1,8 +1,8 @@
 # The Ratio Method
 
-A liability framework that characterizes an activity, product, or industry by a set of law-and-economics variables. It was developed to give policymakers a systematic way to assign liability for the novel risks posed by AI and other emerging technologies of the "Fourth Industrial Revolution."
+A liability framework that characterizes an activity, product, or industry by a set of variables. It was developed as a systematic way to assign liability for the novel risks posed by AI and other emerging technologies of the "Fourth Industrial Revolution."
 
-Once an activity is profiled, it is matched to the historical liability regimes whose profiles it most resembles, such as workers' compensation, the Price-Anderson Act, or the Vaccine Injury Compensation Program.
+Once profiled, the activity is matched to a historical liability regime with similar / matching variables.
 
 It begins with how often the harm occurs relative to the exposed population (**Frequency**), and how large the typical harm is relative to economic output per person (**Average Damages**). The rest capture the value of the activity, both economic and cultural (**Social Value 1 and 2**), the mechanism of the harm (**Type of Harm**), and the cost of litigating it (**Litigation Costs 1 and 2**).
 
