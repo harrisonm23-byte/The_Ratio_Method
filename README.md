@@ -1,13 +1,21 @@
 # The Ratio Method
 
-A framework for characterizing the liability profile of an activity, product, or industry by profiling it with a set of variables. The method is
+A civil liability framework, characterizing an activity, product, or industry by profiling it with a set of legal and economic variables. 
+
+The Ratio Method was developed to provide policy solutions for new risks posed by AI and other emerging technologies of the "Fourth Industrial Revolution". The method is
 used to match the target to a precedent regulatory regime with similar or matching variables. 
 
-The Ratio Method was developed to provide policy solutions for new risks posed by AI and other emerging technologies of the "Fourth Industrial Revolution". 
+The Ratio Method begins with two variables: how often the harm occurs relative to the total population (Frequency), and how large the typical harm is relative to economic 
+output (Average Damages). The other variables capture the social value of the activity (Social Value 1 and 2), the mechanism of the harm (Type of Harm), and the cost of 
+litigating it (Litigation Costs 1 and 2).
 
-Two of the factors are ratios: how often the harm occurs relative to the exposed population (Frequency), and how large the typical harm
-is relative to economic output (Average Damages). The other variables capture the social value of the activity (Social Value 1 and 2), 
-the mechanism of the harm (Type of Harm), and the cost of litigating it (Litigation Costs 1 and 2).
+Frequency =  Number of People Affected / Total Population
+Average Damages = Cost of Harm / GDP per Capita
+Social Value = Economic Benefit to Society / GDP  
+
+Note that Frequency x Average Damages = Total Cost of Harm / GDP
+
+In a sense, we begin with F*AD compared to SV (societal cost-benefit analysis), but pick apart the constituent components of this inequality in order to find a match. 
 
 > **Source.** This repository is derived from the author's article, Harrison C. Margolin & Grant H. Frazier, *The Ratio Method: Addressing Complex Tort Liability in the Fourth Industrial Revolution*, 52 St. Mary's L.J. 679 (2021). [Article page](https://commons.stmarytx.edu/thestmaryslawjournal/vol52/iss3/4/) · [Full text (PDF)](https://commons.stmarytx.edu/cgi/viewcontent.cgi?article=1115&context=thestmaryslawjournal).
 
