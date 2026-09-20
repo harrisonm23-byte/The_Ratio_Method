@@ -1,12 +1,29 @@
 # The Ratio Method
 
-A liability framework characterizing an activity, product, or industry by a set of law-and-economics variables, developed to provide policy solutions for novel risks posed by AI and other emerging technologies of the "Fourth Industrial Revolution." 
+A liability framework that characterizes an activity, product, or industry by a set of law-and-economics variables. It was developed to give policymakers a systematic way to assign liability for the novel risks posed by AI and other emerging technologies of the "Fourth Industrial Revolution."
 
-The method is used to match the target industry / activity to precedent regulatory policies (e.g., Oil Pollution Act. Workers' Compensation) with similar or matching variables. 
+The method works by precedent. Once an activity is profiled, it is matched to the
+historical liability regimes whose profiles it most resembles, such as workers'
+compensation, the Price-Anderson Act, or the Vaccine Injury Compensation Program.
 
-It begins with two variables: how often the harm occurs relative to the total population (Frequency), and how large the typical harm is relative to economic output (Average Damages). The rest captures the social value of the activity (Social Value 1 and 2), the mechanism of the harm (Type of Harm), and the cost of litigating it (Litigation Costs 1 and 2).
+## The variables
 
-> **Source.** This repository is derived from the author's article, Harrison C. Margolin & Grant H. Frazier, *The Ratio Method: Addressing Complex Tort Liability in the Fourth Industrial Revolution*, 52 St. Mary's L.J. 679 (2021). [Article page](https://commons.stmarytx.edu/thestmaryslawjournal/vol52/iss3/4/) · [Full text (PDF)](https://commons.stmarytx.edu/cgi/viewcontent.cgi?article=1115&context=thestmaryslawjournal).
+It begins with two: how often the harm occurs relative to the exposed population
+(**Frequency**), and how large the typical harm is relative to economic output per
+person (**Average Damages**). The rest capture the value of the activity, both
+economic and cultural (**Social Value 1 and 2**), the mechanism of the harm
+(**Type of Harm**), and the cost of litigating it (**Litigation Costs 1 and 2**).
+
+## The report
+
+[The Ratio Method report: Precedents](https://harrisonm23-byte.github.io/The_Ratio_Method/)
+applies the method to the eight risks named in the International AI Safety Report
+2026, reading each against sixteen existing liability regimes.
+
+## Source
+
+Harrison C. Margolin & Grant H. Frazier, *The Ratio Method: Addressing Complex Tort
+Liability in the Fourth Industrial Revolution*, 52 St. Mary's L.J. 679 (2021).  [Article page](https://commons.stmarytx.edu/thestmaryslawjournal/vol52/iss3/4/) · [Full text (PDF)](https://commons.stmarytx.edu/cgi/viewcontent.cgi?article=1115&context=thestmaryslawjournal).
 
 ## The Ratio Method variables
 
