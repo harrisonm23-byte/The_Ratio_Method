@@ -6,9 +6,7 @@ The model begins with how much of the population may incur harm (**Frequency**),
 
 ## The report
 
-[The Ratio Method report: Precedents](https://harrisonm23-byte.github.io/The_Ratio_Method/)
-applies the method to the eight risks named in the International AI Safety Report
-2026, reading each against sixteen existing liability regimes.
+[The Ratio Method report: Precedents](https://harrisonm23-byte.github.io/The_Ratio_Method/) applies the method to the risks named in the International AI Safety Report 2026, and compares each to sixteen existing liability regimes.
 
 ## Source
 
