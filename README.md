@@ -1,6 +1,6 @@
 # The Ratio Method
 
-**The Ratio Method** is a systematic method to design **regulations and liability standards** around novel **AI risks**. The framework profiles an individual risk by a set of **law-and-economics** variables. The risk is then matched to **precedent** regime with a **high ratio of matching variables**.
+**The Ratio Method** is a systematic method to design **regulations and liability standards** around novel **AI risks**. The framework profiles a novel risk with a set of **law-and-economics** variables. The risk is then **matched** to **precedent** regime with a **high ratio** matching variables.
 
 The model begins by profiling the risk based on:
 
