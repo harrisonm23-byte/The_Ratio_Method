@@ -2,7 +2,9 @@
 
 The Ratio Method is a systematic way to design regulatory standards around novel AI risks. The framework profiles an activity, product, or industry by a set of law-and-economics variables. The AI risk is then matched to a precedent regulatory regime with a high ratio of matching variables.
 
-The model begins with the size of the population affected by the risk (**Frequency**) and the size of the harm to each individual (**Average Damages**). It then profiles the economic and cultural value of the activity (**Social Value 1 and 2**), the mechanism of the harm (**Type of Harm**), and the potential cost of litigating an incident (**Litigation Costs 1 and 2**).
+The model begins by profiling the risk based on:
+
+The size of the population affected by the risk (**Frequency**) and the size of harm on an individual scale (**Average Damages**). It then profiles the economic and cultural value of the activity (**Social Value 1 and 2**), the mechanism of the harm (**Type of Harm**), and the potential cost of litigating an incident (**Litigation Costs 1 and 2**).
 
 ## [The Ratio Method report: Precedents](https://harrisonm23-byte.github.io/The_Ratio_Method/)
 
