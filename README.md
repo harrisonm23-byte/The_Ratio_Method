@@ -6,7 +6,7 @@ The model profiles each risk with:
 
 The size of the population that could be affected (**Frequency**) and the scale of harm on an individual basis (**Average Damages**). It then profiles the economic and cultural value of the activity (**Social Value 1 and 2**), the mechanism of harm (**Type of Harm**), and the potential cost of litigating an incident (**Litigation Costs 1 and 2**).
 
-## [The Ratio Method report: Precedents](https://harrisonm23-byte.github.io/The_Ratio_Method/)
+## [Precedents: Matching Frontier AI Risks to Liability Regimes](https://harrisonm23-byte.github.io/The_Ratio_Method/)
 
 The **Precedents** report applies the method to 8 risks named in the **International AI Safety Report 2026**, comparing each to sixteen existing liability regimes.
 
