@@ -52,7 +52,7 @@ h4 .pill{font-size:14px}
 #pmap .pn{position:sticky;left:0;z-index:1;background:#FEFDFB;box-shadow:-14px 0 0 #FEFDFB}#pmap .ai{background:#FBF2EC}#pmap .pn.ai{box-shadow:-14px 0 0 #FBF2EC}#pmap .pg span{position:sticky;left:0;display:inline-block}
 #pmap .dots{display:flex;gap:3px}
 #pmap .dots i{width:8px;height:8px;border-radius:50%;background:#E3DED2;display:block}
-#pmap .pc.sv{justify-content:flex-start;text-align:left;padding-left:10px}#pmap .pc.sv b{font-weight:600;color:#16181D}
+#pmap .pc.sv{justify-content:flex-start;text-align:left;padding-left:10px}#pmap .pc.sv b{font-weight:600;color:#16181D}#pmap .pc.sv .svr{font-size:9.5px;color:#6B6860}
 #pmap .na{color:#8C887E;font-size:10.5px;letter-spacing:.02em}
 #gbar .pill{text-align:center;font-size:12.5px;font-weight:700;padding:5px 4px;overflow:hidden;text-overflow:ellipsis;background:none;color:#12213D;border-radius:0}
 .notes{font-size:15.5px;color:var(--sub);line-height:1.55}footer{font-family:var(--sans);font-size:14px;color:var(--sub);border-top:1px solid var(--rule);margin-top:72px;padding-top:20px}
@@ -924,7 +924,7 @@ const HD=[['Frequency\u00a01','incident rate'],['Frequency\u00a02','scale per in
 const SV2=['Averse','Split','Accepting','Favorable'];
 const norm=t=>t.toLowerCase().replace(/\(.*?\)/g,'').replace(/[^a-z0-9]/g,'');
 const SVT={};document.querySelectorAll('table').forEach(t=>{const hs=[...t.querySelectorAll('th')].map(x=>x.textContent.trim().toLowerCase());const ci=hs.indexOf('social value 2');if(ci<0)return;t.querySelectorAll('tr').forEach(tr=>{const td=tr.querySelectorAll('td');if(td.length>ci){const c=td[0].cloneNode(true);c.querySelectorAll('.cite').forEach(x=>x.remove());SVT[norm(c.textContent)]=td[ci].textContent.trim()}})});
-const svText=(name,v)=>{const t=SVT[norm(name)];if(!t)return SV2[v];const m=t.match(/^((strongly )?(averse|split|accepting|favorable))(.*)$/i);return '<span>'+(m?'<b>'+m[1]+'</b>'+m[4]:t)+'</span>'};
+const svText=(name,v)=>{const t=SVT[norm(name)];if(!t)return SV2[v];const m=t.match(/^((strongly )?(averse|split|accepting|favorable))(.*)$/i);return '<span>'+(m?'<b>'+m[1]+'</b><span class="svr">'+m[4]+'</span>':t)+'</span>'};
 const GR=[[0,3,'Group 1. Ordinary tort','sage'],[3,7,'Group 2. Aggregation of claims','lav'],[7,10,'Group 3. No-fault funds','peach'],[10,14,'Group 4. Catastrophic risk','rose'],[14,16,'Group 5. Shields','gold']];
 const col=ai=>ai?'#C2542D':'#1F3864';
 const cell=(v,vi,ai,name)=>{if(v==='na')return '<span class="na">N/A</span>';
