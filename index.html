@@ -41,7 +41,7 @@ h4{font-family:var(--sans);font-weight:600;font-size:17px;margin:28px 0 10px;col
 h4 .pill{font-size:14px}
 #grid .rc{display:flex;align-items:center;justify-content:center}#grid .rc .pill{writing-mode:vertical-rl;transform:rotate(180deg);font-size:11.5px;padding:10px 6px}
 #gbar{display:grid;grid-template-columns:34px 150px repeat(3,minmax(32px,1fr)) 14px repeat(4,minmax(32px,1fr)) 14px repeat(3,minmax(32px,1fr)) 14px repeat(4,minmax(32px,1fr)) 14px repeat(2,minmax(32px,1fr));gap:3px;min-width:956px;padding-right:72px;margin-top:8px}.gsep{align-self:stretch;margin:-2px 0;background:linear-gradient(var(--rule),var(--rule)) center/1.5px 100% no-repeat}.gsep.hd{background:none}#gbar .gsep{margin:-11px 0 0}
-#pmap{display:grid;grid-template-columns:168px repeat(8,minmax(78px,1fr));min-width:820px;font-family:var(--sans);color:#16181D;font-size:12px}
+#pmap{display:grid;grid-template-columns:168px repeat(4,minmax(76px,1fr)) minmax(160px,1.9fr) repeat(3,minmax(76px,1fr));min-width:920px;font-family:var(--sans);color:#16181D;font-size:12px}
 #pmap .ph{font-weight:700;font-size:11.5px;line-height:1.2;text-align:center;padding:0 4px 8px;border-bottom:1.5px solid #16181D;display:flex;flex-direction:column;justify-content:flex-end}
 #pmap .ph span{font-weight:400;color:#6B6860;font-size:10.5px}
 #pmap .pg{grid-column:1 / -1;padding:12px 0 4px}
@@ -52,6 +52,7 @@ h4 .pill{font-size:14px}
 #pmap .pn{position:sticky;left:0;z-index:1;background:#FEFDFB;box-shadow:-14px 0 0 #FEFDFB}#pmap .ai{background:#FBF2EC}#pmap .pn.ai{box-shadow:-14px 0 0 #FBF2EC}#pmap .pg span{position:sticky;left:0;display:inline-block}
 #pmap .dots{display:flex;gap:3px}
 #pmap .dots i{width:8px;height:8px;border-radius:50%;background:#E3DED2;display:block}
+#pmap .pc.sv{justify-content:flex-start;text-align:left;padding-left:10px}#pmap .pc.sv b{font-weight:600;color:#16181D}
 #pmap .na{color:#8C887E;font-size:10.5px;letter-spacing:.02em}
 #gbar .pill{text-align:center;font-size:12.5px;font-weight:700;padding:5px 4px;overflow:hidden;text-overflow:ellipsis;background:none;color:var(--head);border-radius:0}
 .notes{font-size:15.5px;color:var(--sub);line-height:1.55}footer{font-family:var(--sans);font-size:14px;color:var(--sub);border-top:1px solid var(--rule);margin-top:72px;padding-top:20px}
@@ -856,7 +857,7 @@ h4 .pill{font-size:14px}
 <h3>The profile map</h3>
 <p>Each regime and each AI risk has a profile: one coded step on each of the eight variables. Laid side by side, the profiles show what each kind of regime was built for. Reading down a column places the AI risks among the historical harms on that variable. Reading across a row gives the profile that the Matches section compares.</p>
 <p>Licensing and Price-Anderson share a shape: incidents near zero, high to extreme reach per incident, and the highest damages step. Biological and chemical risks and loss of control have the same shape.</p>
-<figure id="f22" class="fig wide"><div class="paper"><div id="pmap" role="table" aria-label="Profiles of every regime and AI risk on the eight variables"></div><div class="legend">Dots run from near zero (left) to extreme (right); more than one filled dot marks a range. Regimes in navy; AI risks in orange. Full coding and sources are in the <a href="#appendix">Appendix</a>.</div></div><figcaption><b>Figure 2.2: Every regime and every AI risk, on all eight variables</b><br><i>Each row is one profile. Regimes are grouped as in the Precedents table; the eight AI risks follow in orange. Social Value 2 and Type of Harm are categories and are written out. Type of Harm shows injury and mechanism; onset is in the Appendix.</i></figcaption></figure>
+<figure id="f22" class="fig wide"><div class="paper"><div id="pmap" role="table" aria-label="Profiles of every regime and AI risk on the eight variables"></div><div class="legend">Dots run from near zero (left) to extreme (right); more than one filled dot marks a range. Regimes in navy; AI risks in orange. Full coding and sources are in the <a href="#appendix">Appendix</a>.</div></div><figcaption><b>Figure 2.2: Every regime and every AI risk, on all eight variables</b><br><i>Each row is one profile. Regimes are grouped as in the Precedents table; the eight AI risks follow in orange. Social Value 2 is written out with its reason, as worded in the Appendix. Type of Harm shows injury and mechanism; onset is in the Appendix.</i></figcaption></figure>
 
 <hr class="sec" aria-hidden="true">
 <h2 id="matches">Matches</h2>
@@ -921,18 +922,21 @@ g.innerHTML=h;const gS=x=>x+3+GS.filter(s=>s<=x).length,gE=x=>x+3+GS.filter(s=>s
 (function(){const el=document.getElementById('pmap');if(!el)return;
 const HD=[['Frequency\u00a01','incident rate'],['Frequency\u00a02','scale per incident'],['Average Damages','per victim'],['Social Value\u00a01','economic'],['Social Value\u00a02','cultural'],['Type of Harm','injury · mechanism'],['Litigation Costs\u00a01','information vs claim'],['Litigation Costs\u00a02','difficulty of proof']];
 const SV2=['Averse','Split','Accepting','Favorable'];
+const norm=t=>t.toLowerCase().replace(/\(.*?\)/g,'').replace(/[^a-z0-9]/g,'');
+const SVT={};document.querySelectorAll('table').forEach(t=>{const hs=[...t.querySelectorAll('th')].map(x=>x.textContent.trim().toLowerCase());const ci=hs.indexOf('social value 2');if(ci<0)return;t.querySelectorAll('tr').forEach(tr=>{const td=tr.querySelectorAll('td');if(td.length>ci){const c=td[0].cloneNode(true);c.querySelectorAll('.cite').forEach(x=>x.remove());SVT[norm(c.textContent)]=td[ci].textContent.trim()}})});
+const svText=(name,v)=>{const t=SVT[norm(name)];if(!t)return SV2[v];const m=t.match(/^((strongly )?(averse|split|accepting|favorable))(.*)$/i);return '<span>'+(m?'<b>'+m[1]+'</b>'+m[4]:t)+'</span>'};
 const GR=[[0,3,'Group 1. Ordinary tort','sage'],[3,7,'Group 2. Aggregation of claims','lav'],[7,10,'Group 3. No-fault funds','peach'],[10,14,'Group 4. Catastrophic risk','rose'],[14,16,'Group 5. Shields','gold']];
 const col=ai=>ai?'#C2542D':'#1F3864';
-const cell=(v,vi,ai)=>{if(v==='na')return '<span class="na">N/A</span>';
- if(vi===4)return SV2[v];
+const cell=(v,vi,ai,name)=>{if(v==='na')return '<span class="na">N/A</span>';
+ if(vi===4)return svText(name,v);
  if(vi===5)return v.inj.map(x=>W1[x]).join(', ')+'\u00a0· '+W2[v.agent];
  const lo=Array.isArray(v)?v[0]:v,hi=Array.isArray(v)?v[1]:v;let d='';for(let t=0;t<6;t++)d+='<i'+(t>=lo&&t<=hi?' style="background:'+col(ai)+'"':'')+'></i>';return '<span class="dots" aria-hidden="true">'+d+'</span>';};
 const lab=(v,vi)=>{const N=['near zero','low','medium','high','very high','extreme'];if(v==='na')return 'N/A';if(vi===4)return SV2[v];if(vi===5)return v.inj.map(x=>W1[x]).join(', ')+', '+W2[v.agent];return Array.isArray(v)?N[v[0]]+' to '+N[v[1]]:N[v]};
-const row=(name,prof,ai)=>'<div class="pn'+(ai?' ai':'')+'" role="rowheader">'+name+'</div>'+prof.map((v,vi)=>'<div class="pc'+(ai?' ai':'')+'" role="cell" aria-label="'+HD[vi][0]+': '+lab(v,vi)+'">'+cell(v,vi,ai)+'</div>').join('');
+const row=(label,prof,ai,name)=>'<div class="pn'+(ai?' ai':'')+'" role="rowheader">'+label+'</div>'+prof.map((v,vi)=>'<div class="pc'+(vi===4?' sv':'')+(ai?' ai':'')+'" role="cell" aria-label="'+HD[vi][0]+': '+(vi===4?(SVT[norm(name)]||lab(v,vi)):lab(v,vi))+'">'+cell(v,vi,ai,name)+'</div>').join('');
 let h='<div></div>'+HD.map(x=>'<div class="ph" role="columnheader">'+x[0]+'<span>'+x[1]+'</span></div>').join('');
-GR.forEach(g=>{h+='<div class="pg"><span class="pill '+g[3]+'">'+g[2]+'</span></div>';regs.slice(g[0],g[1]).forEach(r=>{h+=row(P.S[r],P.R[r],false)})});
+GR.forEach(g=>{h+='<div class="pg"><span class="pill '+g[3]+'">'+g[2]+'</span></div>';regs.slice(g[0],g[1]).forEach(r=>{h+=row(P.S[r],P.R[r],false,r)})});
 h+='<div class="pg"><span class="pill" style="background:#F9E3D8;color:#A8461F">AI risks, International AI Safety Report 2026</span></div>';
-risks.forEach(k=>{h+=row(k,P.K[k],true)});
+risks.forEach(k=>{h+=row(k,P.K[k],true,k)});
 el.innerHTML=h;})();
 function T(x,y,s,o){o=o||{};return '<text x="'+x+'" y="'+y+'" font-family="Public Sans, system-ui, sans-serif" font-size="'+(o.size||13)+'" fill="'+(o.fill||'#52514E')+'" font-weight="'+(o.bold?700:400)+'" text-anchor="'+(o.anchor||'start')+'">'+String(s).replace(/&/g,'&amp;')+'</text>'}
 function profile(k,r){const kv=P.K[k],rv=P.R[r],miss=P.M[k][r][2],X0=170,W=520,RH=34,Y0=44,ORG='#C2542D',NAVY='#1F3864';let b='<circle cx="'+X0+'" cy="16" r="6" fill="'+ORG+'"/>'+T(X0+12,21,k,{fill:'#16181D',bold:true})+'<rect x="'+(X0+250)+'" y="10" width="12" height="12" rx="2" fill="'+NAVY+'"/>'+T(X0+268,21,r,{fill:'#16181D',bold:true});
