@@ -29,7 +29,7 @@ tr.grp td{font-weight:600;color:var(--head);padding-top:18px;border-bottom:1px s
 #grid button{all:unset;box-sizing:border-box;cursor:pointer;height:36px;border-radius:4px;font-size:11.5px;text-align:center;line-height:36px;font-family:var(--sans)}
 #grid button:focus-visible{outline:2.5px solid #C2542D;outline-offset:2px}#grid button.top{box-shadow:inset 0 0 0 2.5px #C2542D;font-weight:700}#grid button[aria-pressed="true"]{outline:2.5px solid #16181D;outline-offset:1px}
 .legend{font-family:var(--sans);font-size:13px;color:#55534D;margin-top:10px}#prof{margin-top:16px;border-top:1px solid #D9D4C7;padding-top:12px}
-details{border-top:1px solid var(--rule);padding:14px 0}details:last-of-type{border-bottom:1px solid var(--rule)}summary{font-family:var(--sans);font-weight:600;font-size:17px;cursor:pointer}details[open] summary{margin-bottom:16px}
+details{border-top:1px solid var(--rule);padding:14px 0}details:last-of-type{border-bottom:1px solid var(--rule)}summary{font-family:var(--sans);font-weight:600;font-size:17px;cursor:pointer}details[open] summary{margin-bottom:16px}details.figtoggle{margin:28px 0 36px}details.figtoggle summary{font-size:15px;color:var(--head)}details.figtoggle[open] summary{margin-bottom:0}
 pre{font-size:13.5px;line-height:1.5;background:var(--panel);border:1px solid var(--rule);border-radius:6px;padding:16px;overflow-x:auto}
 .sheet{max-width:980px}.sheet summary{padding:0 8px}.sheet table{font-size:14px}
 .star{font-family:var(--sans);font-size:14.5px;color:var(--sub);margin:-24px 0 36px}
@@ -41,18 +41,18 @@ h4{font-family:var(--sans);font-weight:600;font-size:17px;margin:28px 0 10px;col
 h4 .pill{font-size:14px}
 #grid .rc{display:flex;align-items:center;justify-content:center}#grid .rc .pill{writing-mode:vertical-rl;transform:rotate(180deg);font-size:11.5px;padding:10px 6px}
 #gbar{display:grid;grid-template-columns:34px 150px repeat(3,minmax(32px,1fr)) 14px repeat(4,minmax(32px,1fr)) 14px repeat(3,minmax(32px,1fr)) 14px repeat(4,minmax(32px,1fr)) 14px repeat(2,minmax(32px,1fr));gap:3px;min-width:956px;padding-right:72px;margin-top:8px}.gsep{align-self:stretch;margin:-2px 0;background:linear-gradient(var(--rule),var(--rule)) center/1.5px 100% no-repeat}.gsep.hd{background:none}#gbar .gsep{margin:-11px 0 0}
-#pmap{display:grid;grid-template-columns:168px repeat(4,minmax(76px,1fr)) minmax(160px,1.9fr) repeat(3,minmax(76px,1fr));min-width:920px;font-family:var(--sans);color:#16181D;font-size:12px}
+#pmap{display:grid;grid-template-columns:168px repeat(4,minmax(76px,1fr)) minmax(160px,1.9fr) repeat(3,minmax(76px,1fr));min-width:920px;font-family:var(--sans);color:#16181D;font-size:11.5px}
 #pmap .ph{font-weight:700;font-size:11.5px;line-height:1.2;text-align:center;padding:0 4px 8px;border-bottom:1.5px solid #16181D;display:flex;flex-direction:column;justify-content:flex-end}
 #pmap .ph span{font-weight:400;color:#6B6860;font-size:10.5px}
-#pmap .pg{grid-column:1 / -1;padding:12px 0 4px}
-#pmap .pg span{font-weight:700;font-size:11.5px;padding:3px 9px;border-radius:999px}
-#pmap .pn,#pmap .pc{padding:6px 4px;border-bottom:1px solid #ECE8DE;display:flex;align-items:center}
-#pmap .pn{font-size:12.5px;padding-left:2px}
+#pmap .pg{grid-column:1 / -1;padding:8px 0 2px}
+#pmap .pg span{font-weight:700;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:#6B6860;background:none!important;padding:0}
+#pmap .pn,#pmap .pc{padding:3px 4px;border-bottom:1px solid #F0ECE3;display:flex;align-items:center}
+#pmap .pn{font-size:12px;padding-left:2px}
 #pmap .pc{justify-content:center;text-align:center;font-size:11px;line-height:1.2;color:#3E3D39}
-#pmap .pn{position:sticky;left:0;z-index:1;background:#FEFDFB;box-shadow:-14px 0 0 #FEFDFB}#pmap .ai{background:#FBF2EC}#pmap .pn.ai{box-shadow:-14px 0 0 #FBF2EC}#pmap .pg span{position:sticky;left:0;display:inline-block}
-#pmap .dots{display:flex;gap:3px}
-#pmap .dots i{width:8px;height:8px;border-radius:50%;background:#E3DED2;display:block}
-#pmap .pc.sv{justify-content:flex-start;text-align:left;padding-left:10px}#pmap .pc.sv b{font-weight:600;color:#16181D}#pmap .pc.sv .svr{font-size:9.5px;color:#6B6860}
+#pmap .pn{position:sticky;left:0;z-index:1;background:#FEFDFB;box-shadow:-14px 0 0 #FEFDFB}#pmap .pn.ai{color:#A8461F}#pmap .pg span{position:sticky;left:0;display:inline-block}
+#pmap .dots{display:flex;gap:2px}
+#pmap .dots i{width:6px;height:6px;border-radius:50%;background:#ECE8DE;display:block}
+#pmap .pc.sv{justify-content:flex-start;text-align:left;padding-left:10px}#pmap .pc.sv b{font-weight:600;color:#16181D}#pmap .pc.sv .svr{display:none}#pmap .pc.th{font-size:10.5px}
 #pmap .na{color:#8C887E;font-size:10.5px;letter-spacing:.02em}
 .scroll.wide{margin-left:50%}table.el,table.prec{min-width:900px}table.prec{font-size:13.5px}table.el td:first-child,table.el th:first-child,table.prec td:first-child,table.prec th:first-child{position:sticky;left:0;z-index:1;background:var(--paper);min-width:150px}table.el tr.grp td,table.prec tr.grp td{position:static}
 .vd{display:inline-block;font-family:var(--sans);font-weight:700;font-size:12px;line-height:1;padding:4px 9px;border-radius:999px;white-space:nowrap;margin-right:4px}
@@ -865,9 +865,9 @@ table.lv{min-width:760px;font-size:13.5px;color:#16181D}table.lv th{border-botto
 <hr class="sec" aria-hidden="true">
 <h2 id="matches">Matches</h2>
 <p>Each risk is compared, variable by variable, against every regime. A variable matches when the two sit on the same step of its scale or one step apart. Regimes are ranked by matches minus misses, with equal weights, and every result is re-run under strict matching, where only the same step counts. The full rules are in the <a href="#appendix">Appendix</a>.</p>
-<p>Figure 3.1 lays every profile side by side. To see why a risk matched a regime, read the risk's row against the regime's row. Social Value 2 matches only on the same category, and Type of Harm when two of its three parts agree.</p>
+<p>Figure 3.1, which opens below, lays every profile side by side. To see why a risk matched a regime, read the risk's row against the regime's row. Social Value 2 matches only on the same category, and Type of Harm when two of its three parts agree.</p>
 <p>Some shapes stand out. Licensing and Price-Anderson share one: incidents near zero, high to extreme reach per incident, and the highest damages step. Biological and chemical risks and loss of control have the same shape.</p>
-<figure id="f31p" class="fig wide"><div class="paper"><div id="pmap" role="table" aria-label="Profiles of every regime and AI risk on the eight variables"></div><div class="legend">Dots run from near zero (left) to extreme (right); more than one filled dot marks a range. Regimes in navy; AI risks in orange. Full coding and sources are in the <a href="#appendix">Appendix</a>.</div></div><figcaption><b>Figure 3.1: How a risk matches a regime</b><br><i>Each row is one profile on the eight variables. Regimes are grouped as in the Precedents table; the eight AI risks follow in orange. Social Value 2 is written out with its reason, as worded in the Appendix. Type of Harm shows injury and mechanism; onset is in the Appendix.</i></figcaption></figure>
+<details class="figtoggle"><summary>Show how each match is made: every profile on all eight variables</summary><figure id="f31p" class="fig wide"><div class="paper"><div id="pmap" role="table" aria-label="Profiles of every regime and AI risk on the eight variables"></div><div class="legend">Dots run from near zero (left) to extreme (right); more than one filled dot marks a range. Regimes in navy; AI risks in orange. Full coding and sources are in the <a href="#appendix">Appendix</a>.</div></div><figcaption><b>Figure 3.1: How a risk matches a regime</b><br><i>Each row is one profile on the eight variables. Regimes are grouped as in the Precedents table; the eight AI risks follow in orange. Social Value 2 is written out; its reasons are in the Appendix. Type of Harm shows injury and mechanism; onset is in the Appendix.</i></figcaption></figure></details>
 <figure id="f31" class="fig wide"><div class="paper"><div id="grid" role="group" aria-label="Scorecard of AI risks against historical regimes"></div><div id="gbar"></div><div class="legend">Cell: variables matched of those compared. Darker is closer. Orange outline: closest regime for that risk. Select any cell to compare the two profiles.</div><div id="prof" aria-live="polite"></div></div>
 <figcaption><b>Figure 3.2: The catastrophic risks match the regimes built for catastrophe and almost nothing else</b><br><i>Every AI risk against every historical regime. Select a cell to see the risk (orange) against the regime (navy), variable by variable. A grey link joins the two where they match. For Type of Harm, the parts the two share are underlined.</i></figcaption></figure>
 
@@ -966,10 +966,10 @@ const cell=(v,vi,ai,name)=>{if(v==='na')return '<span class="na">N/A</span>';
  if(vi===5)return v.inj.map(x=>W1[x]).join(', ')+'\u00a0· '+W2[v.agent];
  const lo=Array.isArray(v)?v[0]:v,hi=Array.isArray(v)?v[1]:v;let d='';for(let t=0;t<6;t++)d+='<i'+(t>=lo&&t<=hi?' style="background:'+col(ai)+'"':'')+'></i>';return '<span class="dots" aria-hidden="true">'+d+'</span>';};
 const lab=(v,vi)=>{const N=['near zero','low','medium','high','very high','extreme'];if(v==='na')return 'N/A';if(vi===4)return SV2[v];if(vi===5)return v.inj.map(x=>W1[x]).join(', ')+', '+W2[v.agent];return Array.isArray(v)?N[v[0]]+' to '+N[v[1]]:N[v]};
-const row=(label,prof,ai,name)=>'<div class="pn'+(ai?' ai':'')+'" role="rowheader">'+label+'</div>'+prof.map((v,vi)=>'<div class="pc'+(vi===4?' sv':'')+(ai?' ai':'')+'" role="cell" aria-label="'+HD[vi][0]+': '+(vi===4?(SVT[norm(name)]||lab(v,vi)):lab(v,vi))+'">'+cell(v,vi,ai,name)+'</div>').join('');
+const row=(label,prof,ai,name)=>'<div class="pn'+(ai?' ai':'')+'" role="rowheader">'+label+'</div>'+prof.map((v,vi)=>'<div class="pc'+(vi===4?' sv':'')+(vi===5?' th':'')+(ai?' ai':'')+'" role="cell" aria-label="'+HD[vi][0]+': '+(vi===4?(SVT[norm(name)]||lab(v,vi)):lab(v,vi))+'">'+cell(v,vi,ai,name)+'</div>').join('');
 let h='<div></div>'+HD.map(x=>'<div class="ph" role="columnheader">'+x[0]+'<span>'+x[1]+'</span></div>').join('');
 GR.forEach(g=>{h+='<div class="pg"><span class="pill '+g[3]+'">'+g[2]+'</span></div>';regs.slice(g[0],g[1]).forEach(r=>{h+=row(P.S[r],P.R[r],false,r)})});
-h+='<div class="pg"><span class="pill" style="background:#F9E3D8;color:#A8461F">AI risks, International AI Safety Report 2026</span></div>';
+h+='<div class="pg"><span class="pill" style="color:#A8461F">AI risks, International AI Safety Report 2026</span></div>';
 risks.forEach(k=>{h+=row(k,P.K[k],true,k)});
 el.innerHTML=h;})();
 function T(x,y,s,o){o=o||{};return '<text x="'+x+'" y="'+y+'" font-family="Public Sans, system-ui, sans-serif" font-size="'+(o.size||13)+'" fill="'+(o.fill||'#52514E')+'" font-weight="'+(o.bold?700:400)+'" text-anchor="'+(o.anchor||'start')+'">'+String(s).replace(/&/g,'&amp;')+'</text>'}
