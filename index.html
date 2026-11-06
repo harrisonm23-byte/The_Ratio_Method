@@ -41,7 +41,7 @@ h4{font-family:var(--sans);font-weight:600;font-size:17px;margin:28px 0 10px;col
 h4 .pill{font-size:14px}
 #grid .rc{display:flex;align-items:center;justify-content:center}#grid .rc .pill{writing-mode:vertical-rl;transform:rotate(180deg);font-size:11.5px;padding:10px 6px}
 #gbar{display:grid;grid-template-columns:34px 150px repeat(3,minmax(32px,1fr)) 14px repeat(4,minmax(32px,1fr)) 14px repeat(3,minmax(32px,1fr)) 14px repeat(4,minmax(32px,1fr)) 14px repeat(2,minmax(32px,1fr));gap:3px;min-width:956px;padding-right:72px;margin-top:8px}.gsep{align-self:stretch;margin:-2px 0;background:linear-gradient(var(--rule),var(--rule)) center/1.5px 100% no-repeat}.gsep.hd{background:none}#gbar .gsep{margin:-11px 0 0}
-#pmap{display:grid;grid-template-columns:168px repeat(4,minmax(76px,1fr)) minmax(160px,1.9fr) repeat(3,minmax(76px,1fr));min-width:920px;font-family:var(--sans);color:#16181D;font-size:12px}
+#pmap{display:grid;grid-template-columns:168px repeat(4,minmax(76px,1fr)) minmax(124px,1.35fr) repeat(3,minmax(76px,1fr));min-width:880px;font-family:var(--sans);color:#16181D;font-size:12px}
 #pmap .ph{font-weight:700;font-size:11.5px;line-height:1.2;text-align:center;padding:0 4px 8px;border-bottom:1.5px solid #16181D;display:flex;flex-direction:column;justify-content:flex-end}
 #pmap .ph span{font-weight:400;color:#6B6860;font-size:10.5px}
 #pmap .pg{grid-column:1 / -1;padding:12px 0 4px}
@@ -52,7 +52,7 @@ h4 .pill{font-size:14px}
 #pmap .pn{position:sticky;left:0;z-index:1;background:#FEFDFB;box-shadow:-14px 0 0 #FEFDFB}#pmap .ai{background:#FBF2EC}#pmap .pn.ai{box-shadow:-14px 0 0 #FBF2EC}#pmap .pg span{position:sticky;left:0;display:inline-block}
 #pmap .dots{display:flex;gap:3px}
 #pmap .dots i{width:8px;height:8px;border-radius:50%;background:#E3DED2;display:block}
-#pmap .pc.sv{justify-content:flex-start;text-align:left;padding-left:10px}#pmap .pc.sv b{font-weight:600;color:#16181D}#pmap .pc.sv .svr{font-size:9.5px;color:#6B6860}
+#pmap .pc.sv{justify-content:flex-start;text-align:left;padding-left:10px}#pmap .pc.sv b{font-weight:600;color:#16181D}#pmap .pc.sv .svr{display:block;font-size:9.5px;line-height:1.25;color:#6B6860;margin-top:1px}
 #pmap .na{color:#8C887E;font-size:10.5px;letter-spacing:.02em}
 .scroll.wide{margin-left:50%}table.el,table.prec{min-width:900px}table.prec{font-size:13.5px}table.el td:first-child,table.el th:first-child,table.prec td:first-child,table.prec th:first-child{position:sticky;left:0;z-index:1;background:var(--paper);min-width:150px}table.el tr.grp td,table.prec tr.grp td{position:static}
 .vd{display:inline-block;font-family:var(--sans);font-weight:700;font-size:12px;line-height:1;padding:4px 9px;border-radius:999px;white-space:nowrap;margin-right:4px}
@@ -958,7 +958,7 @@ const HD=[['Frequency\u00a01','incident rate'],['Frequency\u00a02','scale per in
 const SV2=['Averse','Split','Accepting','Favorable'];
 const norm=t=>t.toLowerCase().replace(/\(.*?\)/g,'').replace(/[^a-z0-9]/g,'');
 const SVT={};document.querySelectorAll('table').forEach(t=>{const hs=[...t.querySelectorAll('th')].map(x=>x.textContent.trim().toLowerCase());const ci=hs.indexOf('social value 2');if(ci<0)return;t.querySelectorAll('tr').forEach(tr=>{const td=tr.querySelectorAll('td');if(td.length>ci){const c=td[0].cloneNode(true);c.querySelectorAll('.cite').forEach(x=>x.remove());SVT[norm(c.textContent)]=td[ci].textContent.trim()}})});
-const svText=(name,v)=>{const t=SVT[norm(name)];if(!t)return SV2[v];const m=t.match(/^((strongly )?(averse|split|accepting|favorable))(.*)$/i);return '<span>'+(m?'<b>'+m[1]+'</b><span class="svr">'+m[4]+'</span>':t)+'</span>'};
+const svText=(name,v)=>{const t=SVT[norm(name)];if(!t)return SV2[v];const m=t.match(/^((strongly )?(averse|split|accepting|favorable))(.*)$/i);const sep=m?/^[:;]/.test(m[4]):false,rs=m?m[4].replace(/^[:;,]?\s*/,''):'';return '<span>'+(m?'<b>'+m[1]+'</b>'+(rs?'<span class="svr">'+(sep?rs.charAt(0).toUpperCase()+rs.slice(1):rs)+'</span>':''):t)+'</span>'};
 const GR=[[0,3,'Group 1. Ordinary tort','sage'],[3,7,'Group 2. Aggregation of claims','lav'],[7,10,'Group 3. No-fault funds','peach'],[10,14,'Group 4. Catastrophic risk','rose'],[14,16,'Group 5. Shields','gold']];
 const col=ai=>ai?'#C2542D':'#1F3864';
 const cell=(v,vi,ai,name)=>{if(v==='na')return '<span class="na">N/A</span>';
