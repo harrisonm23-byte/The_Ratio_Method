@@ -10,6 +10,8 @@ The size of the population that could be affected (**Frequency**) and the scale 
 
 The **Precedents** report applies the method to 8 risks named in the **International AI Safety Report 2026**, comparing each to sixteen existing liability regimes.
 
+The Ratio Method is intended as a comparative analytical tool, not a prescriptive formula for regulatory design. Its purpose is to characterize emerging risks along common dimensions and identify historically regulated risks with similar profiles. These comparisons provide a starting point for examining the legal and institutional frameworks developed in response to analogous risks, rather than a basis for adopting those frameworks wholesale. Similarity in risk characteristics does not necessarily imply similarity in appropriate regulatory treatment. Any proposed application of a historical regulatory framework to AI therefore requires independent consideration of the relevant technological, economic, and institutional differences.
+
 ## Source
 
 Harrison C. Margolin & Grant H. Frazier, *The Ratio Method: Addressing Complex Tort
