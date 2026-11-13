@@ -54,7 +54,7 @@ Liability in the Fourth Industrial Revolution*, 52 St. Mary's L.J. 679 (2021).  
       <td><code>str</code></td>
     </tr>
     <tr>
-      <td>Type of Harm</td>
+      <td>Causation Mechanism</td>
       <td><code>Type_Harm</code></td>
       <td>The mechanism of the harm, classified along the six axes in <a href="#type-of-harm-th">Type of Harm</a>.</td>
       <td><code>str</code></td>
