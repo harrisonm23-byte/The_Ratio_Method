@@ -10,7 +10,7 @@ The size of the population that could be affected (**Frequency**) and the scale 
 
 The **Precedents** report applies the method to 8 risks named in the **International AI Safety Report 2026**, comparing each to sixteen existing liability regimes.
 
-The Ratio Method is a design tool, but not a formula. It identifies the regulated risks whose profiles most resemble a new risk, and recommends their legal elements as the starting point for a design. It does not prescribe a regime wholesale. Each element still needs separate analysis of the technological, economic and institutional differences.
+The Ratio Method is a design tool. It identifies the regulated risks whose profiles most resemble a new risk, and recommends their legal elements as the starting point for a design. It does not prescribe a regime wholesale, and each element still needs separate analysis of the technological, economic and institutional differences.
 
 ## Source
 
